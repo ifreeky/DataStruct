@@ -44,5 +44,6 @@ public class TraverseTest {
 
     public void testPostOrder() {
         PostOrder postOrder = new PostOrder();
+        postOrder.unRecursive(root);
     }
 }
