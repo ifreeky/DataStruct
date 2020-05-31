@@ -30,7 +30,7 @@ public class TraverseTest {
 
     public static void main(String[] args) {
         TraverseTest traverseTest = new TraverseTest();
-        traverseTest.testPostOrder();
+        traverseTest.testMiddleOrder();
     }
     public void testPreOrder(){
         PreOrder preOrder = new PreOrder();
