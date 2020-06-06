@@ -6,7 +6,7 @@ import com.ifreeky.learn.tree.binary.base.Node;
  * @author ifreeky
  * @since 06 六月 2020
  */
-public class ThreadedNode extends Node {
+public class ThreadedNode {
 
     /**
      * 如果leftType=0,表示指向的是左子树，如果为1，表示指向的是前驱结点
@@ -18,8 +18,15 @@ public class ThreadedNode extends Node {
      */
     private int rightType;
 
+    private int data;
+
+    private ThreadedNode left;
+
+    private ThreadedNode right;
+
+
     public ThreadedNode(int data) {
-        super(data);
+       this.data = data;
     }
 
     public int getLeftType() {
@@ -36,5 +43,29 @@ public class ThreadedNode extends Node {
 
     public void setRightType(int rightType) {
         this.rightType = rightType;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public ThreadedNode getLeft() {
+        return left;
+    }
+
+    public void setLeft(ThreadedNode left) {
+        this.left = left;
+    }
+
+    public ThreadedNode getRight() {
+        return right;
+    }
+
+    public void setRight(ThreadedNode right) {
+        this.right = right;
     }
 }
