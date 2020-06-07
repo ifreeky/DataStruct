@@ -23,9 +23,7 @@ public class ThreadedBinaryTreeTest {
         node2.setRight(node5);
         node3.setLeft(node6);
         ThreadedBinaryTree threadedBinaryTree = new ThreadedBinaryTree();
-
         threadedBinaryTree.midThreadedBinaryTree(root);
-        System.out.println(node5.getLeft().getData());
-        System.out.println(node5.getRight().getData());
+        threadedBinaryTree.midOrderTraverseThreadedBinaryTree(root);
     }
 }

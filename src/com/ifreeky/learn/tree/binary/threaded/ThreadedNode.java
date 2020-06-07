@@ -1,7 +1,5 @@
 package com.ifreeky.learn.tree.binary.threaded;
 
-import com.ifreeky.learn.tree.binary.base.Node;
-
 /**
  * @author ifreeky
  * @since 06 六月 2020

@@ -2,6 +2,7 @@ package com.ifreeky.learn.tree.binary.threaded;
 
 /**
  * 线索化二叉树
+ *
  * @author ifreeky
  * @since 06 六月 2020
  */
@@ -31,5 +32,29 @@ public class ThreadedBinaryTree {
         preThreadedNode = threadedNode;
 
         midThreadedBinaryTree(threadedNode.getRight());
+    }
+
+    /**
+     * 遍历中序线索化二叉树
+     */
+    public void midOrderTraverseThreadedBinaryTree(ThreadedNode threadedNode) {
+        ThreadedNode node = threadedNode;
+        while (node != null) {
+
+            while (node.getLeftType() == 0) {
+                node = node.getLeft();
+            }
+
+            System.out.println(node.getData());
+
+            while (node.getRightType() == 1) {
+                node = node.getRight();
+                System.out.println(node.getData());
+            }
+
+            node = node.getRight();
+        }
+
+
     }
 }
