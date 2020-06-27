@@ -5,7 +5,7 @@ package com.ifreeky.learn.tree.binary.base;
  * @author ifreeky
  * @since 15 五月 2020
  */
-public class Node {
+public class Node implements Comparable<Node> {
 
     private int data;
 
@@ -39,5 +39,10 @@ public class Node {
 
     public void setRight(Node right) {
         this.right = right;
+    }
+
+    @Override
+    public int compareTo(Node o) {
+        return this.data - o.data;
     }
 }
