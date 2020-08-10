@@ -1,4 +1,4 @@
-package com.ifreeky.learn.tree.binary.threaded;
+package com.ifreeky.learn.exc.binary.threaded;
 
 /**
  * 线索化二叉树

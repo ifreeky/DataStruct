@@ -1,6 +1,6 @@
 package com.ifreeky.learn.test.tree.binary.order;
 
-import com.ifreeky.learn.tree.binary.order.OrderBinaryTree;
+import com.ifreeky.learn.exc.binary.order.OrderBinaryTree;
 
 /**
  * @author ifreeky
