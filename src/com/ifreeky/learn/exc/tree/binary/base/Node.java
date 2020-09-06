@@ -1,4 +1,4 @@
-package com.ifreeky.learn.exc.binary.base;
+package com.ifreeky.learn.exc.tree.binary.base;
 
 /**
  * 二叉树的节点

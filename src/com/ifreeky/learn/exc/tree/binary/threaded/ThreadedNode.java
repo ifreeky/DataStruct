@@ -1,4 +1,4 @@
-package com.ifreeky.learn.exc.binary.threaded;
+package com.ifreeky.learn.exc.tree.binary.threaded;
 
 /**
  * @author ifreeky

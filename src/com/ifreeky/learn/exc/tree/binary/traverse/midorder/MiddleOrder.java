@@ -1,23 +1,22 @@
-package com.ifreeky.learn.exc.binary.traverse.preorder;
+package com.ifreeky.learn.exc.tree.binary.traverse.midorder;
 
-import com.ifreeky.learn.exc.binary.base.Node;
+import com.ifreeky.learn.exc.tree.binary.base.Node;
 
 import java.util.Objects;
 import java.util.Stack;
 
 /**
- * 二叉树的先序遍历
+ * 二叉树中序遍历
  * @author ifreeky
  * @since 15 五月 2020
  */
-public class PreOrder {
-
+public class MiddleOrder {
     public void recursive(Node root) {
         if (null == root){
             return;
         }
-        print(root);
         recursive(root.getLeft());
+        print(root);
         recursive(root.getRight());
     }
 
@@ -26,15 +25,15 @@ public class PreOrder {
             return;
         }
         Stack<Node> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.empty()) {
-            Node cur = stack.pop();
-            print(cur);
-            if (Objects.nonNull(cur.getRight())) {
-                stack.push(cur.getRight());
-            }
-            if (Objects.nonNull(cur.getLeft())) {
-                stack.push(cur.getLeft());
+        Node cur = root;
+        while (!stack.isEmpty() || Objects.nonNull(cur)) {
+            if (cur != null){
+                stack.push(cur);
+                cur = cur.getLeft();
+            }else {
+                Node node = stack.pop();
+                print(node);
+                cur = node.getRight();
             }
         }
     }

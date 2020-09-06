@@ -1,7 +1,7 @@
-package com.ifreeky.learn.exc.binary.huffmantree;
+package com.ifreeky.learn.exc.tree.binary.huffmantree;
 
 
-import com.ifreeky.learn.exc.binary.base.Node;
+import com.ifreeky.learn.exc.tree.binary.base.Node;
 
 import java.util.Arrays;
 import java.util.Collections;

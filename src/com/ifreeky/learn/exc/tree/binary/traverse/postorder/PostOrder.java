@@ -1,6 +1,6 @@
-package com.ifreeky.learn.exc.binary.traverse.postorder;
+package com.ifreeky.learn.exc.tree.binary.traverse.postorder;
 
-import com.ifreeky.learn.exc.binary.base.Node;
+import com.ifreeky.learn.exc.tree.binary.base.Node;
 
 import java.util.Objects;
 import java.util.Stack;

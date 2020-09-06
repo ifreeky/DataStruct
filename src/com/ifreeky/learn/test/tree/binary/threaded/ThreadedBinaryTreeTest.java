@@ -1,7 +1,7 @@
 package com.ifreeky.learn.test.tree.binary.threaded;
 
-import com.ifreeky.learn.exc.binary.threaded.ThreadedBinaryTree;
-import com.ifreeky.learn.exc.binary.threaded.ThreadedNode;
+import com.ifreeky.learn.exc.tree.binary.threaded.ThreadedBinaryTree;
+import com.ifreeky.learn.exc.tree.binary.threaded.ThreadedNode;
 
 /**
  * @author ifreeky

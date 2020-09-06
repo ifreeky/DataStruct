@@ -1,9 +1,9 @@
 package com.ifreeky.learn.test.tree.binary.traverse.preorder;
 
-import com.ifreeky.learn.exc.binary.base.Node;
-import com.ifreeky.learn.exc.binary.traverse.midorder.MiddleOrder;
-import com.ifreeky.learn.exc.binary.traverse.postorder.PostOrder;
-import com.ifreeky.learn.exc.binary.traverse.preorder.PreOrder;
+import com.ifreeky.learn.exc.tree.binary.base.Node;
+import com.ifreeky.learn.exc.tree.binary.traverse.midorder.MiddleOrder;
+import com.ifreeky.learn.exc.tree.binary.traverse.postorder.PostOrder;
+import com.ifreeky.learn.exc.tree.binary.traverse.preorder.PreOrder;
 
 /**
  * @author ifreeky

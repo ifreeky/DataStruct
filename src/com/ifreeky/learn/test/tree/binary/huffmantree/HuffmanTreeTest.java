@@ -1,8 +1,8 @@
 package com.ifreeky.learn.test.tree.binary.huffmantree;
 
-import com.ifreeky.learn.exc.binary.base.Node;
-import com.ifreeky.learn.exc.binary.huffmantree.HuffmanTree;
-import com.ifreeky.learn.exc.binary.traverse.preorder.PreOrder;
+import com.ifreeky.learn.exc.tree.binary.base.Node;
+import com.ifreeky.learn.exc.tree.binary.huffmantree.HuffmanTree;
+import com.ifreeky.learn.exc.tree.binary.traverse.preorder.PreOrder;
 
 /**
  * @author ifreeky

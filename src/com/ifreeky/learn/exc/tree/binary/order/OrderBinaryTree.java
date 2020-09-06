@@ -1,4 +1,4 @@
-package com.ifreeky.learn.exc.binary.order;
+package com.ifreeky.learn.exc.tree.binary.order;
 
 /**
  * 顺序二叉树
