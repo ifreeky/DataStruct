@@ -26,13 +26,11 @@ public class MinDistance {
 
 		for (int i = 1; i < n + 1; i++) {
 			for (int j = 1; j < m + 1; j++) {
-				int add = dp[i - 1][j] + 1;
-				int delete = dp[i][j - 1] + 1;
-				int change = dp[i - 1][j - 1];
-				if (str1.charAt(i - 1) != str2.charAt(j - 1)) {
-					change++;
+				if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
+					dp[i][j] = dp[i - 1][j - 1];
+				} else {
+					dp[i][j] =Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1])) + 1;
 				}
-				dp[i][j] = Math.min(add, Math.min(delete, change));
 			}
 		}
 		return dp[n][m];
@@ -41,6 +39,6 @@ public class MinDistance {
 
 	public static void main(String[] args) {
 		MinDistance minDistance = new MinDistance();
-		System.out.println(minDistance.solution("intention", "execution"));
+		System.out.println(minDistance.solution("The sky is blue. I love China.", "I love China. I love five-star red flag."));
 	}
 }
