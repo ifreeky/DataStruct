@@ -42,6 +42,8 @@ public class LargeGroupPositions {
                 startIndex = i;
                 positionWord = curWord;
             }
+
+            //@ 特殊处理下尾部的
             if ((i == s.length() - 1) && size>=3) {
                 List<Integer> position = new ArrayList<>();
                 position.add(startIndex);
